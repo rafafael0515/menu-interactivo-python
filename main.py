@@ -90,8 +90,8 @@ def editar_usuario(usuarios):
 
         nuevo_nombre = input("Nuevo nombre: ").strip().title()
         
-        if not nuevo_nombre.strip():
-            print("Nombre invalido")
+        if not nuevo_nombre:
+            print("No hay usuarios registrados")
             return
 
         if not all(palabra.isalpha() for palabra in nuevo_nombre.split()):
